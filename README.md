@@ -12,7 +12,7 @@ A full-stack online store application built with Node.js, Express, and MongoDB.
 ## Tech Stack
 * Frontend: HTML5, CSS3, JavaScript, Bootstrap 5
 * Backend: Node.js, Express
-* Database: MongoDB (Mongoose)
+* Database: MongoDB Atlas
 
 ## Installation
 1. Clone the repository
