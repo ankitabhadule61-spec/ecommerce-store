@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">📦 QuickShop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Catalog</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">
+                            Cart <span class="badge bg-danger" id="cart-count">0</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" id="nav-auth">
+                        <a class="btn btn-outline-light btn-sm ms-2" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-white py-5 border-bottom mb-4">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold">Welcome to Our Store</h1>
+            <p class="lead text-muted">Discover top-quality products with real-time tracking.</p>
+        </div>
+    </header>
+
+    <section class="container mb-5 d-none" id="tracking-section">
+        <div class="card shadow-sm border-0">
+            <div class="card-header bg-dark text-white fw-semibold py-3">
+                📋 Your Live Order Tracking Profiles
+            </div>
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle mb-0">
+                        <thead class="table-light">
+                            <tr>
+                                <th scope="col" class="ps-3">Order ID</th>
+                                <th scope="col">Total Paid</th>
+                                <th scope="col">Fulfillment State</th>
+                            </tr>
+                        </thead>
+                        <tbody id="user-tracking-log">
+                            </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="container mb-5">
+        <h2 class="mb-4 fw-semibold">Our Collection</h2>
+        <div class="row g-4" id="product-container">
+            <div class="text-center col-12">
+                <div class="spinner-border text-primary" role="status"></div>
+                <p class="mt-2 text-muted">Fetching latest catalog inventory...</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

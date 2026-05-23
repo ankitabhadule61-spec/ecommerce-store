@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Shopping Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">📦 QuickShop</a>
+            <a class="btn btn-outline-light btn-sm" href="index.html">Back to Store</a>
+        </div>
+    </nav>
+
+    <div class="container mb-5">
+        <h2 class="mb-4 fw-bold">Shopping Cart</h2>
+        <div class="row g-4">
+            
+            <!-- Items Column List -->
+            <div class="col-lg-8">
+                <div class="card p-3 shadow-sm border-0" id="cart-items-wrapper">
+                    <!-- Dynamic rendering target hook -->
+                </div>
+            </div>
+
+            <!-- Price Breakdown Summary Summary Sidebar -->
+            <div class="col-lg-4">
+                <div class="card p-4 shadow-sm border-0 position-sticky" style="top: 90px;">
+                    <h4 class="fw-bold mb-3">Order Summary</h4>
+                    <hr>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class="text-muted">Subtotal Items</span>
+                        <span id="summary-subtotal">$0.00</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-4">
+                        <span class="text-muted">Shipping Fulfillments</span>
+                        <span class="text-success fw-semibold">FREE</span>
+                    </div>
+                    <div class="d-flex justify-content-between font-monospace fw-bold fs-5 mb-4 border-top pt-3">
+                        <span>Total Due:</span>
+                        <span id="summary-total">$0.00</span>
+                    </div>
+                    <button class="btn btn-success w-100 fw-bold py-2.5" id="checkout-btn">Proceed To Checkout</button>
+                    <div class="alert alert-info mt-3 d-none" id="checkout-status"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
