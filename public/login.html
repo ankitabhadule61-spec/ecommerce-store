@@ -6,19 +6,33 @@
     <title>Authentication Portal</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body class="bg-light">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-black shadow-sm">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1 fw-bold text-white">
+                📦 QuickShop
+            </span>
+        </div>
+    </nav>
 
     <div class="container d-flex justify-content-center align-items-center vh-100">
         <div class="card shadow-lg border-0" style="width: 100%; max-width: 420px;">
             <div class="card-body p-4">
+
                 <div class="text-center mb-4">
                     <h3 class="fw-bold text-dark" id="form-title">Welcome Back</h3>
-                    <p class="text-muted small" id="form-subtitle">Please sign in to continue shopping</p>
+                    <p class="text-muted small" id="form-subtitle">
+                        Please sign in to continue shopping
+                    </p>
                 </div>
 
                 <div class="alert alert-danger d-none" id="auth-alert"></div>
 
                 <form id="auth-form">
+
                     <div class="mb-3 d-none" id="name-group">
                         <label class="form-label small fw-semibold">Full Name</label>
                         <input type="text" class="form-control" id="auth-name" placeholder="John Doe">
@@ -34,17 +48,25 @@
                         <input type="password" class="form-control" id="auth-password" placeholder="••••••••" required>
                     </div>
 
-                    <button type="submit" class="btn btn-dark w-100 fw-semibold mb-3" id="submit-btn">Sign In</button>
-                    
+                    <button type="submit" class="btn btn-dark w-100 fw-semibold mb-3" id="submit-btn">
+                        Sign In
+                    </button>
+
                     <div class="text-center">
-                        <span class="text-muted small" id="toggle-text">New customer?</span>
-                        <a href="#" class="small fw-bold text-decoration-none ms-1" id="toggle-link">Create account</a>
+                        <span class="text-muted small" id="toggle-text">
+                            New customer?
+                        </span>
+                        <a href="#" class="small fw-bold text-decoration-none ms-1" id="toggle-link">
+                            Create account
+                        </a>
                     </div>
+
                 </form>
             </div>
         </div>
     </div>
 
     <script src="js/main.js"></script>
+
 </body>
 </html>
